@@ -11,6 +11,8 @@ A mod for `make way` that gives the ability to configure some camera settings
  - FarCamera
       - FarCamera.dll
 4. Drag the FarCamera folder with its contents into `Make Way/BepInEx/Plugins`
+5. Run the game once and then close it
+6. Open `make way/BepInEx/config/FarCamera.cfg` and edit it to your preferences
 
 # Credits
 - [Ice Beam](https://icebeam.co.uk/make-way)
