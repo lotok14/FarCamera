@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- steam default: C:\Program Files (x86)\Steam\steamapps\common\Ultimate Chicken Horse\ -->
+		<gameAssemblies>C:\Users\wskot\Desktop\developerskie\Make Way mod\assemblies\</gameAssemblies>
+	</PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>FarCamera</AssemblyName>
+    <Description>My first plugin</Description>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RestoreAdditionalProjectSources>
+      https://api.nuget.org/v3/index.json;
+      https://nuget.bepinex.dev/v3/index.json
+    </RestoreAdditionalProjectSources>
+    <RootNamespace>FarCamera</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+
+	  <Reference Include="BepInEx.Core">
+		  <HintPath>
+			  C:\Users\wskot\Desktop\developerskie\Make Way mod\Make Way\BepInEx\core\
+			  BepInEx.Core.dll
+		  </HintPath>
+	  </Reference>
+
+	  <Reference Include="0Harmony">
+		  <HintPath>
+			  C:\Users\wskot\Desktop\developerskie\Make Way mod\Make Way\BepInEx\core\
+			  0Harmony.dll
+		  </HintPath>
+	  </Reference>
+
+	  <Reference Include="BepInEx.Unity.IL2CPP">
+		  <HintPath>
+			  C:\Users\wskot\Desktop\developerskie\Make Way mod\Make Way\BepInEx\core\
+			  BepInEx.Unity.IL2CPP.dll
+		  </HintPath>
+	  </Reference>
+
+	  <Reference Include="BepInEx.Unity.IL2CPP">
+		  <HintPath>
+			  C:\Users\wskot\Desktop\developerskie\Make Way mod\Make Way\BepInEx\core\
+			  BepInEx.Unity.IL2CPP.dll
+		  </HintPath>
+	  </Reference>
+
+	  <Reference Include="Assembly-CSharp">
+		  <HintPath>$(gameAssemblies)\Assembly-CSharp.dll</HintPath>
+	  </Reference>
+
+	  <Reference Include="UnityEngine">
+		  <HintPath>$(gameAssemblies)\UnityEngine.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.CoreModule">
+		  <HintPath>$(gameAssemblies)\UnityEngine.CoreModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.InputLegacyModule">
+		  <HintPath>$(gameAssemblies)\UnityEngine.InputLegacyModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.InputModule">
+		  <HintPath>$(gameAssemblies)\UnityEngine.InputModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UI">
+		  <HintPath>$(gameAssemblies)\UnityEngine.UI.dll</HintPath>
+	  </Reference>
+  </ItemGroup>
+</Project>
