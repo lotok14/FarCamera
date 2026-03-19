@@ -13,6 +13,10 @@ A mod for `make way` that gives the ability to configure some camera settings
 4. Drag the FarCamera folder with its contents into `Make Way/BepInEx/Plugins`
 5. Run the game once and then close it
 6. Open `make way/BepInEx/config/FarCamera.cfg` and edit it to your preferences
+ - Recommended settings:
+  -  Look ahead = 25
+  -  Camera offset Y = 70
+  -  Camera offset Z = -90
 
 # Credits
 - [Ice Beam](https://icebeam.co.uk/make-way)
